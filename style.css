@@ -8,11 +8,14 @@ Template: catch-responsive
 
 /*@import url("../catch-responsive/style.css");*/
 
-/////////////////
-// footer menu //
-//////////////////
+////////////
+// footer //
+////////////
 
-    #supplementary.three, #supplementary.three div, #supplementary.three section {
+    #supplementary,
+    #supplementary.three, 
+    #supplementary.three div, 
+    #supplementary.three section {
 	    background-color: #222222;
     }
 
@@ -26,8 +29,7 @@ Template: catch-responsive
     .site-footer > #supplementary h6 {
 	    color: white;
     }
-
-    
+ 
 
     #footer-content.copyright {
 	    color: black;
@@ -35,11 +37,6 @@ Template: catch-responsive
 
     #footer-content.copyright a:hover {
 	    color: black;
-    }
-
-    // third column of footer
-    .site-footer #third .widget {
-	    padding: 0px 20px;
     }
 
 
@@ -66,36 +63,16 @@ Template: catch-responsive
 // mobile menu //
 /////////////////
 
-#masthead .wrapper {
-    display: grid !important;
-    grid-template-areas: "head"
-        "nav1"
-        "nav2"
-    ;
-    grid-gap: 3px;
-}
+    .mobile-menu-text {
+        display: inline;
+        padding-left: 10px;
+    }
 
-.mobile-menu-text {
-    display: inline;
-    padding-left: 10px;
-}
+    .mobile-menu-anchor {
+        width: 100%;
+        background-color: white;
+    }
 
-.mobile-menu-anchor {
-    width: 100%;
-}
-
-#mobile-header-left-menu {
-    grid-area: nav1;
-    background-color: white;
-    width: 100%;
-}
-
-#mobile-header-right-menu{
-    background-color: white;
-    grid-area: nav2;
-}
-
-#site-branding {
-    grid-area: head;
-    width: 100% !important;
-}
+    #site-branding {
+        width: 100% !important;
+    }
