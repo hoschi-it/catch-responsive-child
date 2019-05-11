@@ -1,0 +1,101 @@
+/*
+Theme Name:	Catch Responsive Child
+Description: Dieses Theme dient der dauerhaften Anpassung des Eltern-Themes an das gewünschte Design. Updates werden diese Anpassungen nun nicht einfach wieder ausradieren.
+Author:	Janina Hosch
+Template: catch-responsive
+*/
+
+
+/*@import url("../catch-responsive/style.css");*/
+
+/////////////////
+// footer menu //
+//////////////////
+
+    #supplementary.three, #supplementary.three div, #supplementary.three section {
+	    background-color: #222222;
+    }
+
+    .site-footer > #supplementary a,
+    .site-footer > #supplementary p,
+    .site-footer > #supplementary h1,
+    .site-footer > #supplementary h2,
+    .site-footer > #supplementary h3,
+    .site-footer > #supplementary h4,
+    .site-footer > #supplementary h5,
+    .site-footer > #supplementary h6 {
+	    color: white;
+    }
+
+    
+
+    #footer-content.copyright {
+	    color: black;
+    }
+
+    #footer-content.copyright a:hover {
+	    color: black;
+    }
+
+    // third column of footer
+    .site-footer #third .widget {
+	    padding: 0px 20px;
+    }
+
+
+///////////////////
+// header design //
+///////////////////
+    header .site-title > a:hover {
+	    color: black;
+    }
+    
+    .widget-area a {
+	    color: black;
+    }
+
+    #header-right-social-icons {
+	    float: none;
+    }
+    
+    #header-right-search, #header-right-search div {
+        display: none;
+    } 
+
+/////////////////
+// mobile menu //
+/////////////////
+
+#masthead .wrapper {
+    display: grid !important;
+    grid-template-areas: "head"
+        "nav1"
+        "nav2"
+    ;
+    grid-gap: 3px;
+}
+
+.mobile-menu-text {
+    display: inline;
+    padding-left: 10px;
+}
+
+.mobile-menu-anchor {
+    width: 100%;
+}
+
+#mobile-header-left-menu {
+    grid-area: nav1;
+    background-color: white;
+    width: 100%;
+}
+
+#mobile-header-right-menu{
+    background-color: white;
+    grid-area: nav2;
+}
+
+#site-branding {
+    grid-area: head;
+    width: 100% !important;
+}
