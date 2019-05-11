@@ -16,6 +16,6 @@ function crc_embbed_churchtools_callist() {
 
 add_shortcode( 'ct_calendar', 'crc_embbed_churchtools_calendar' );
 add_shortcode( 'ct_callist', 'crc_embbed_churchtools_callist');
-add_action('wp_enqueue_scripts', 'crc_enqueue_styles');
+add_action('wp_enqueue_scripts', 'crc_enqueue_styles', 1000);
 
 ?>
