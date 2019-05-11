@@ -1,5 +1,11 @@
 <?php
 
+function crc_get_styles() {
+    $path = get_template_directory_uri().'/style.css';
+    $style_code = file_get_contents($path);
+    $style_code;
+}
+
 function crc_enqueue_styles() {
     wp_register_style('crc-css', get_template_directory_uri().'/style.css');    
     wp_enqueue_style( 'crc-css' );
@@ -16,6 +22,6 @@ function crc_embbed_churchtools_callist() {
 
 add_shortcode( 'ct_calendar', 'crc_embbed_churchtools_calendar' );
 add_shortcode( 'ct_callist', 'crc_embbed_churchtools_callist');
-add_action('wp_enqueue_scripts', 'crc_enqueue_styles', 1000);
+//add_action('wp_enqueue_scripts', 'crc_enqueue_styles', 1000);
 
 ?>

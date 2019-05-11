@@ -25,12 +25,13 @@
 	 */
 	do_action( 'catchresponsive_before_wp_head' );
 
-	wp_head(); ?>
+    wp_head();
+    
+    crc_get_styles();
+?>
 </head>
 
 <body <?php body_class(); ?>>
-
-<h1>This is the start of a new age, as we rise up...</h1>
 
 <?php do_action( 'wp_body_open' );  ?>
 
