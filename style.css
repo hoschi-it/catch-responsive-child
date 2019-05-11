@@ -64,7 +64,7 @@ Template: catch-responsive
 /////////////////
 
     .mobile-menu-text {
-        display: inline;
+        display: inline !important;
         padding-left: 10px;
     }
 
