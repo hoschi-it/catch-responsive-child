@@ -26,7 +26,9 @@
 	do_action( 'catchresponsive_before_wp_head' );
 
     wp_head();
-    
+?>
+<xyz>Hello again, this is the developer.</xyz>
+<?php    
     crc_get_styles();
 ?>
 </head>
