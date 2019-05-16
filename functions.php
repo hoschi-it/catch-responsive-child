@@ -17,11 +17,14 @@ function crc_embbed_churchtools_calendar() {
 }
 
 function crc_embbed_churchtools_callist() {
-    return '<iframe src="https://fegbv.church.tools/?q=churchcal&embedded=true&viewname=eventView" width="100%" height="1000px"> </iframe>';
+    return '<iframe
+                src="https://fegbv.church.tools/?q=churchcal&embedded=true&viewname=eventView&minical=true&entries=7"
+                width="100%"
+                height="750px">
+            </iframe>';
 }
 
 add_shortcode( 'ct_calendar', 'crc_embbed_churchtools_calendar' );
 add_shortcode( 'ct_callist', 'crc_embbed_churchtools_callist');
-//add_action('wp_enqueue_scripts', 'crc_enqueue_styles', 1000);
 
 ?>
