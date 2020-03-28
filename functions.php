@@ -18,6 +18,19 @@ function embbed_churchtools_callist() {
         </iframe>';
 }
 
+
+if ( function_exists('register_sidebar') )
+    register_sidebar(array(
+        'name' => 'custom_notification_header',
+        'before_widget' => '<div class = "headerNotification">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    )
+);
+
+
+
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_all' );
 add_shortcode( 'ct_calendar', 'embbed_churchtools_calendar' );
 add_shortcode( 'ct_callist', 'embbed_churchtools_callist');
