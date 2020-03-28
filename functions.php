@@ -1,30 +1,25 @@
-<?php
+<?php 
 
-function crc_get_styles() {
-    $path = get_template_directory_uri().'/style.css';
-    $style_code = file_get_contents($path);
-    $style_code;
-}
-
-function crc_enqueue_styles() {
-    wp_register_style('crc-css', get_template_directory_uri().'/style.css');    
-    wp_enqueue_style( 'crc-css' );
+function theme_enqueue_all(){
+	wp_enqueue_style( 'catch-responsive-css', get_template_directory_uri() . '/style.css' );
+    wp_enqueue_script('catch-responsive-js', get_template_directory_uri() . '/code.js' );
 }
 
 // Add Shortcode for embbeding churchtools calender
-function crc_embbed_churchtools_calendar() {
+function embbed_churchtools_calendar() {
     return '<iframe src="https://fegbv.church.tools/?q=churchcal&embedded=true&viewname=calView" width="100%" height="1000px"> </iframe>';
 }
 
-function crc_embbed_churchtools_callist() {
-    return '<iframe
-                src="https://fegbv.church.tools/?q=churchcal&embedded=true&viewname=eventView&minical=true&entries=7"
-                width="100%"
-                height="750px">
-            </iframe>';
+function embbed_churchtools_callist() {
+    return '<iframe 
+        src="https://fegbv.church.tools/?q=churchcal&embedded=true&viewname=eventView&minical=true&entries=7" 
+        width="100%" 
+        height="750px"> 
+        </iframe>';
 }
 
-add_shortcode( 'ct_calendar', 'crc_embbed_churchtools_calendar' );
-add_shortcode( 'ct_callist', 'crc_embbed_churchtools_callist');
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_all' );
+add_shortcode( 'ct_calendar', 'embbed_churchtools_calendar' );
+add_shortcode( 'ct_callist', 'embbed_churchtools_callist');
 
 ?>

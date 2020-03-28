@@ -13,3 +13,4 @@ Child Wordpress Theme of Catch Responsive, adapted for "FeG Bad Vilbel"s needs
 ### Shortcodes
 - ct_calendar: embedds the calendar of feg bad vilbel
 - ct_callist: embedds upcoming events of feg bad vilbel
+
