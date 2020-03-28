@@ -113,13 +113,16 @@ if ( ! function_exists( 'catchresponsive_header_end' ) ) :
 	 */
 	function catchresponsive_header_end() {
 		?>
-			</div><!-- .wrapper -->
+            </div><!-- .wrapper -->
+            <div class="notificationArea widgetArea">
+                <?php if ( function_exists('dynamic_sidebar') ):
+                    dynamic_sidebar("custom_notification_header"); 
+                    endif;
+                }
+                ?>
+            </div>
         </header><!-- #masthead -->
 
-            <?php if ( !function_exists('dynamic_sidebar') 
-                || !dynamic_sidebar("custom_notification_header") ) : 
-            ?>
-            <?php endif;?>
 
 
 		<?php
