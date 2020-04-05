@@ -113,29 +113,8 @@ if ( ! function_exists( 'catchresponsive_header_end' ) ) :
 	 */
 	function catchresponsive_header_end() {
 		?>
-            </div><!-- .wrapper -->
-            <div class="notificationArea widgetArea">
-
-                <div class="su-note" style="border-color:#cf8387;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;">
-                    <div class="su-note-inner su-u-clearfix su-u-trim" style="background-color:#e99da1;border-color:#ffffff;color:#333333;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;">
-                        <h3>Achtung:</h3>
-                        <p>Wegen der Corona-Pandemie werden in unserer Gemeinde im Zeitraum vom <strong>15. März bis einschließlich 12. April 2020 keine Gottesdienste</strong>  stattfinden, um uns selbst und unsere Lieben zu schützen.
-                        </p>
-                        <p>
-                            <cite>
-Gott gebe euch die Gelassenheit,<br>
-Dinge hinzunehmen, die ihr nicht ändern könnt,<br>
-den Mut, Dinge zu ändern, die ihr ändern könnt,<br>
-und die Weisheit, das eine vom anderen zu unterscheiden.
-                            </cite>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </header><!-- #masthead -->
-
-
-
+			</div><!-- .wrapper -->
+		</header><!-- #masthead -->
 		<?php
 	}
 endif;
@@ -241,5 +220,3 @@ function catchresponsive_header_right() {
 }
 endif;
 add_action( 'catchresponsive_header', 'catchresponsive_header_right', 60 );
-
-
