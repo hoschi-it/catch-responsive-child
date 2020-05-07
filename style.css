@@ -8,9 +8,22 @@ Template: catch-responsive
 
 /*@import url("../catch-responsive/style.css");*/
 
-/////////////////
+
+/*////////////////////////
+ * Latest Posts Teaser
+ ///////////////////////*/
+ .wp-block-latest-posts.wp-block-latest-posts__list li {
+     list-style: none;
+ }
+
+ .wp-block-latest-posts.wp-block-latest-posts__list.is-grid a {
+     text-decoration: underline;
+ }
+
+
+/*////////////////
 // footer menu //
-//////////////////
+/////////////////*/
 
 #supplementary {
     border-bottom: none;
@@ -52,9 +65,9 @@ Template: catch-responsive
 }
 
 
-///////////////////
+/*//////////////////
 // header design //
-///////////////////
+//////////////////*/
 header .site-title > a:hover {
     color: black;
 }
@@ -71,9 +84,9 @@ header .site-title > a:hover {
     display: none;
 }
 
-/////////////////
+/*////////////////
 // mobile menu //
-/////////////////
+////////////////*/
 
 #masthead .wrapper {
     display: grid !important;
