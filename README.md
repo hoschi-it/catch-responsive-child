@@ -1,3 +1,6 @@
+# Moved to Gitlab.
+https://gitlab.com/hoschi-it/catch-responsive-child
+
 # Catch Responsive Child
 Child Wordpress Theme of Catch Responsive, adapted for "FeG Bad Vilbel"s needs
 
